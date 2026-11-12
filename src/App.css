@@ -1,0 +1,66 @@
+/* Estilos generales de la página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Cuadrícula responsiva automática */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Tarjeta individual de cada Digimon */
+.digimon-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.digimon-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen del personaje */
+.digimon-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Nombre del Digimon */
+.digimon-card h3 {
+  margin: 10px 0 8px;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+/* Atributos extra (nivel, ID, etc.) */
+.digimon-card p {
+  margin: 6px 0;
+  color: #666;
+  font-size: 14px;
+}
